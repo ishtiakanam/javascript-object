@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container{
+         display: flex;
+         flex-direction: row;
+         max-width: 1200px;
+         margin: 0 auto;
+       
+     }
+     .food{
+         border: 4px solid green;
+         border-radius: 5%;
+         width: 500px;
+         margin: 10px;
+         height: 500px;
+     }
+     .food img{
+         width: 100px;
+     }
+     @media (max-width: 760px) {
+        .comntainer .food{
+            flex-direction:column ;
+            background-color: aquamarine;
+        } 
+     }
+     @media (min-width: 1200px) {
+        .container .food{
+          background-color: blue;
+      }
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="food">
+        <img src="./images/food.jpg" alt="" >
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit voluptatem quisquam debitis temporibus praesentium alias error dignissimos veritatis enim.</p>
+    </div>
+    <div class="food">
+        <img src="./images/food.jpg" alt="" >
+        <p>Quis, nobis. Beatae, at fugit blanditiis pariatur aliquam consequuntur cupiditate molestiae voluptatibus eius repellat unde esse distinctio quibusdam voluptatem doloremque.</p>
+    </div>
+    <div class="food">
+        <img src="./images/food.jpg" alt="" >
+        <p>Ut veritatis debitis iste aliquam, laborum natus assumenda id iure incidunt commodi non nam fugiat numquam quidem quia quae mollitia.</p>
+    </div>
+    <div class="food">
+        <img src="./images/food.jpg" alt="" >
+        <p>Ipsa aliquid voluptatem, porro quasi quis maxime eos quisquam, tenetur harum ducimus, esse sunt fugit quibusdam modi aliquam facere nobis!</p>
+    </div>
+    <div class="food">
+        <img src="./images/food.jpg" alt="">
+        <p>Enim molestias laboriosam deserunt nemo facilis nihil ipsa quam, officia cumque? Explicabo consectetur possimus magni dicta repudiandae earum ab aspernatur!</p>
+    </div>
+    <div class="food">
+        <img src="./images/food.jpg" alt="">
+        <p>Quos tenetur cum iure obcaecati inventore culpa ullam eos minus nihil, quas aperiam. Labore repellendus doloribus quisquam soluta voluptatibus doloremque.</p>
+    </div>
+    
+    </div>
+    </div>
+</body>
+</html>

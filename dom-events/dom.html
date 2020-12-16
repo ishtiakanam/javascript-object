@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exploring dom</title>
+    <style>
+      article {
+        border: 3px solid black;
+        border-radius: 5px;
+        margin: 5px;
+      }
+      .special-h3 {
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <article>
+          <h3>article-1</h3>
+          <p title="I am the most valuable number" class="author">autor-1</p>
+          <p class="describtion">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
+            repudiandae vero neque libero ab saepe animi facere assumenda.
+            Doloremque unde excepturi minima similique nulla voluptatem, ullam
+            temporibus fuga cumque mollitia!
+          </p>
+        </article>
+        <article>
+          <h3 class="special-h3">article-2</h3>
+          <p class="author">autor-2</p>
+          <p class="describtion">
+            Suscipit nulla delectus sapiente rem quos odit et hic qui,
+            asperiores quas ea, pariatur quia quis perspiciatis at voluptas
+            natus amet ab ducimus molestias quibusdam incidunt reiciendis fugit?
+            Odio, tempore.
+          </p>
+        </article>
+        <article>
+          <h3 class="special-h3">article-3</h3>
+          <p class="author">autor-3</p>
+          <p class="describtion">
+            Ipsa adipisci debitis natus aliquid possimus excepturi quisquam ex
+            consequuntur nesciunt molestiae fuga repellat, expedita totam
+            ducimus veritatis fugiat repudiandae iste. Laborum ducimus odio
+            earum reiciendis veritatis placeat quidem suscipit.
+          </p>
+        </article>
+      </section>
+      <script>
+        document.body.style.backgroundColor = "yellow";
+        let author = document.querySelector(".special-h3");
+        for (let i = 0; i < author.length; i++) {
+          let element = author[i];
+          console.log(element.innerHTML);
+          element.innerHTML = "Fahim-" + i;
+          element.style.backgroundColor = "lightblue";
+          element.style.margin = "10px";
+        }
+      </script>
+    </main>
+  </body>
+</html>

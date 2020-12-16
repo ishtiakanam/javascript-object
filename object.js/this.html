@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is not consfused anymore</h1>
+    <script>
+      const object = {
+        name: "Ishtiak Anam",
+        getFullName: function () {
+          console.log(this);
+          return "MR " + this.name;
+        },
+      };
+      //   myobj = getFullName();
+
+      const anotherobj = {
+        name: "kairul anam",
+      };
+      //   anotherobj.getFullName = myobj.getFullName;
+      //   console.log(anotherobj.getFullName);
+      //   anotherobj.getFullName();
+
+      function add(a, b) {
+        return a + b;
+      }
+      add(15, 15);
+    </script>
+  </body>
+</html>
